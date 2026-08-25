@@ -12,7 +12,7 @@ I'm the guy behind **[AIVOA](https://github.com/kishan-sip-it/AIVOA)** (AI compl
 things that are, in fact, deployed and not just "in progress" on a Trello board somewhere. Currently an
 **AI Data Annotator @ Handshake AI** — I get paid to break AI models on purpose and document exactly how.
 
-**No drama, just deployments. 🍜**
+**No excuses, just deployments. 🍜**
 
 <br/>
 
