@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b0f17,50:1c2444,100:7c8cff&height=220&section=header&text=Kishan%20Marwadi&fontSize=52&fontColor=ffb454&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20AI%20Systems%20Builder&descAlignY=58&descSize=18&descColor=e8ecf5" width="100%"/>
+
 <p align="center">
   <img src="https://cdna.artstation.com/p/assets/images/images/028/102/058/original/pixel-jeff-matrix-s.gif?1593487263" width="100%" height="350" alt="creative coding gif">
 </p>
