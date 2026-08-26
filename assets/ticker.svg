@@ -5,12 +5,13 @@
     <g font-size="12.5" fill="#aab4c8">
       <g>
         <text y="28">
+          
           <tspan fill="#5fd88f">●</tspan> AIVOA — duplicate-detection algorithm shipped&#160;&#160;&#160;&#160;
           <tspan fill="#5fd88f">●</tspan> LPFinder — RBAC + HTTP-only JWT cookies live&#160;&#160;&#160;&#160;
           <tspan fill="#5fd88f">●</tspan> Kindling — pytest suite green on in-memory SQLite&#160;&#160;&#160;&#160;
           <tspan fill="#5fd88f">●</tspan> Samaaroh — 30% advance-payment workflow live&#160;&#160;&#160;&#160;
           <tspan fill="#5fd88f">●</tspan> Wavelength — OTP auto-advance shipped&#160;&#160;&#160;&#160;
-          <tspan fill="#ffb454">●</tspan> no drama, just deployments 🍜&#160;&#160;&#160;&#160;
+          
         </text>
         <animateTransform attributeName="transform" type="translate" from="0,0" to="-1800,0" dur="26s" repeatCount="indefinite"/>
       </g>
