@@ -1,31 +1,65 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050711"/><stop offset="1" stop-color="#0b0820"/></linearGradient>
-  <linearGradient id="sky" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#16002f"/><stop offset=".5" stop-color="#07091a"/><stop offset="1" stop-color="#18002f"/></linearGradient>
-  <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#03040d"/><stop offset=".65" stop-color="#09051a"/><stop offset="1" stop-color="#120526"/>
+  </linearGradient>
+  <radialGradient id="horizon" cx="50%" cy="92%" r="62%">
+    <stop offset="0" stop-color="#ff159f" stop-opacity=".34"/><stop offset=".35" stop-color="#6511b9" stop-opacity=".16"/><stop offset="1" stop-color="#05050f" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="building" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#17052f"/><stop offset="1" stop-color="#050613"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="2.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" opacity=".035"/></pattern>
+  <pattern id="windows" width="18" height="22" patternUnits="userSpaceOnUse"><rect x="5" y="5" width="4" height="7" fill="#ff2ca8" opacity=".65"/><rect x="12" y="5" width="3" height="7" fill="#6418ff" opacity=".7"/></pattern>
 </defs>
+
 <rect width="1200" height="260" fill="url(#bg)"/>
-<rect width="1200" height="260" fill="url(#sky)" opacity=".72"/>
-<g fill="#5b0c91" opacity=".55">
-  <path d="M0 95 Q80 60 160 96 T320 92 T480 95 T640 88 T800 95 T960 90 T1120 96 T1200 92 V120 H0Z"/>
+<rect width="1200" height="260" fill="url(#horizon)"/>
+
+<!-- pixel stars / clouds -->
+<g fill="#b000ff" opacity=".85">
+  <rect x="82" y="34" width="3" height="3"/><rect x="170" y="63" width="2" height="2"/><rect x="266" y="28" width="3" height="3"/>
+  <rect x="365" y="52" width="2" height="2"/><rect x="474" y="25" width="3" height="3"/><rect x="724" y="36" width="3" height="3"/>
+  <rect x="824" y="22" width="2" height="2"/><rect x="930" y="58" width="3" height="3"/><rect x="1050" y="30" width="2" height="2"/><rect x="1134" y="53" width="3" height="3"/>
 </g>
-<g fill="#090b19" stroke="#250c45" stroke-width="2">
-  <path d="M0 170V125h38v45h14V102h42v68h12V132h34v38h20V92h58v78h12V116h35v54h16V139h45v31h18V109h50v61h14V88h65v82h17V122h38v48h14V103h55v67h14V132h38v38h17V95h61v75h14V118h43v52h15V86h58v84h17V126h44v44h17V108h61v62h16V94h48v76h15V120h52v50h16V101h61v69h20V170Z"/>
+<g fill="#32104e" opacity=".7">
+  <path d="M18 72h55l10 7H4zM102 55h70l14 8H88zM1028 62h70l15 8h-92zM1120 48h54l12 7h-75z"/>
 </g>
-<g fill="#ff2f9f" filter="url(#glow)">
-  <rect x="24" y="138" width="4" height="10"/><rect x="60" y="118" width="4" height="8"/><rect x="72" y="142" width="5" height="12"/><rect x="112" y="144" width="4" height="8"/><rect x="145" y="106" width="5" height="11"/><rect x="162" y="124" width="4" height="9"/><rect x="185" y="111" width="5" height="12"/><rect x="215" y="145" width="4" height="9"/><rect x="260" y="121" width="5" height="10"/><rect x="282" y="142" width="4" height="9"/><rect x="330" y="103" width="5" height="11"/><rect x="365" y="126" width="4" height="10"/><rect x="400" y="109" width="5" height="12"/><rect x="448" y="136" width="4" height="10"/><rect x="485" y="115" width="5" height="11"/><rect x="530" y="98" width="4" height="9"/><rect x="575" y="128" width="5" height="12"/><rect x="625" y="112" width="4" height="10"/><rect x="665" y="140" width="5" height="10"/><rect x="710" y="104" width="4" height="11"/><rect x="760" y="124" width="5" height="12"/><rect x="805" y="106" width="4" height="9"/><rect x="850" y="139" width="5" height="11"/><rect x="900" y="117" width="4" height="10"/><rect x="940" y="100" width="5" height="12"/><rect x="990" y="135" width="4" height="10"/><rect x="1040" y="110" width="5" height="12"/><rect x="1090" y="128" width="4" height="10"/><rect x="1140" y="105" width="5" height="11"/>
+
+<!-- LEFT SIDE SKYLINE: deliberately kept away from the title -->
+<g fill="url(#building)" stroke="#42106f" stroke-width="2">
+  <path d="M0 194V128h38v66h13V104h43v90h12V143h35v51h13V84h55v110h12V119h38v75h13V151h42v43h14V105h48v89h16V133h38v61h16V155h44v39H0Z"/>
+  <path d="M0 194V142h28v52h15V116h31v78h13V136h28v58h12V104h34v90h12V148h29v46h14V125h35v69h13V155h28v39h15V135h39v59h16V149h31v45h12V118h40v76H0Z" opacity=".55"/>
 </g>
-<g fill="#00eaff" opacity=".8">
-  <rect x="90" y="151" width="3" height="7"/><rect x="305" y="145" width="3" height="7"/><rect x="545" y="151" width="3" height="7"/><rect x="735" y="148" width="3" height="7"/><rect x="1025" y="150" width="3" height="7"/><rect x="1160" y="146" width="3" height="7"/>
+<g fill="url(#windows)">
+  <path d="M51 110h41v82H51zM144 90h55v102h-55zM239 125h38v67h-38zM309 112h48v80h-48zM390 140h42v52h-42z"/>
 </g>
-<path d="M0 174 Q150 166 300 174 T600 172 T900 174 T1200 171" fill="none" stroke="#ff19a8" stroke-width="3" opacity=".7" filter="url(#glow)"/>
-<g opacity=".8" fill="#d100ff">
-  <circle cx="80" cy="42" r="1.5"/><circle cx="210" cy="26" r="1"/><circle cx="330" cy="52" r="1.4"/><circle cx="470" cy="24" r="1"/><circle cx="610" cy="44" r="1.5"/><circle cx="760" cy="27" r="1"/><circle cx="890" cy="48" r="1.4"/><circle cx="1030" cy="24" r="1"/><circle cx="1135" cy="52" r="1.5"/>
+
+<!-- RIGHT SIDE SKYLINE -->
+<g fill="url(#building)" stroke="#42106f" stroke-width="2">
+  <path d="M1200 194V118h-42v76h-14V96h-48v98h-13V137h-35v57h-14V82h-57v112h-13V120h-39v74h-13V150h-45v44h-14V105h-50v89h-15V132h-39v62h-15V154h-43v40h-14V115h-42v79h-16V194Z"/>
+  <path d="M1200 194V140h-29v54h-13v-79h-34v79h-13v-60h-29v60h-12v-91h-35v91h-12v-47h-30v47h-14v-69h-37v69h-13v-39h-29v39h-14v-75h-40v75h-13v-56h-31v56h-14v-76h-38v76h-13v-59h-35v59H1200Z" opacity=".55"/>
 </g>
+<g fill="url(#windows)">
+  <path d="M1158 102h42v90h-42zM1050 92h55v100h-55zM962 126h38v66h-38zM880 112h50v80h-50zM790 138h43v54h-43z"/>
+</g>
+
+<!-- low distant center skyline, leaving a clean title zone -->
+<g fill="#100b24" stroke="#32105c" stroke-width="1.5" opacity=".9">
+  <path d="M330 194v-22h20v22h14v-34h25v34h14v-19h18v19h15v-29h28v29h18v-16h22v16h20v-25h27v25h20v-14h25v14h22v-20h29v20h24v-14h22v14h20v-20h28v20h19v-14h24v14h21v-27h29v27h17v-18h25v18h16v-31h28v31h18v-20h24v20h17v-27h29v27h20v-15h20v15H330Z"/>
+</g>
+
+<!-- neon horizon -->
+<path d="M0 198 Q160 190 320 198 T600 196 T880 198 T1200 195" fill="none" stroke="#ff19a8" stroke-width="3" opacity=".85" filter="url(#glow)"/>
+<path d="M315 201H885" stroke="#7b20ff" stroke-width="2" opacity=".9"/>
+<ellipse cx="600" cy="202" rx="260" ry="12" fill="#d000ff" opacity=".09" filter="url(#glow)"/>
+
+<!-- title kept in the clean center -->
+<text x="600" y="104" text-anchor="middle" font-family="monospace" font-size="57" font-weight="900" letter-spacing="1" fill="#f6f4ff" stroke="#ffffff" stroke-width=".6">Kishan Marwadi</text>
+<text x="600" y="142" text-anchor="middle" font-family="monospace" font-size="20" font-weight="700" fill="#18e9ff">Full-Stack Developer | AI Systems Builder</text>
+<rect x="425" y="157" width="350" height="2" fill="#9b36ff" opacity=".9"/>
+
+<!-- subtle CRT scanline -->
 <rect width="1200" height="260" fill="url(#scan)"/>
-<text x="600" y="92" text-anchor="middle" font-family="monospace" font-size="58" font-weight="900" fill="#ff3d91" stroke="#ff168c" stroke-width="1">Kishan Marwadi</text>
-<text x="600" y="132" text-anchor="middle" font-family="monospace" font-size="20" fill="#b99cff">Full-Stack Developer | AI Systems Builder</text>
-<rect x="410" y="151" width="380" height="2" fill="#7b21ff" opacity=".8"/>
-<text x="600" y="238" text-anchor="middle" font-family="monospace" font-size="11" fill="#6b43b7" opacity=".75">CODE  •  BUILD  •  DEPLOY  •  REPEAT</text>
 </svg>
