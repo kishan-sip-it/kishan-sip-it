@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170">
+<defs><linearGradient id="g1" x1="0" x2="1"><stop stop-color="#ff2f9f"/><stop offset="1" stop-color="#7b21ff"/></linearGradient></defs>
+<rect width="1200" height="170" fill="#070912"/>
+<g fill="#0a0d19" stroke="#5720b7" stroke-width="1.5">
+ <rect x="8" y="8" width="286" height="154" rx="8"/><rect x="306" y="8" width="286" height="154" rx="8"/><rect x="604" y="8" width="286" height="154" rx="8"/><rect x="902" y="8" width="290" height="154" rx="8"/>
+</g>
+<g font-family="monospace">
+ <g fill="#e9e5ff" font-size="14"><text x="28" y="38">Total Contributions</text><text x="326" y="38">Repositories</text><text x="624" y="38">Stars Earned</text><text x="922" y="38">Commit Streak</text></g>
+ <g fill="#ff3d91" font-size="35" font-weight="800"><text x="28" y="86">1.6k+</text><text x="326" y="86">11</text><text x="624" y="86">250+</text><text x="922" y="86">132 days</text></g>
+ <g fill="none" stroke="url(#g1)" stroke-width="3">
+  <path d="M28 132 L48 124 L62 137 L82 113 L98 127 L116 119 L134 136 L151 108 L168 123 L185 116 L202 130 L220 112 L238 120 L258 105"/>
+  <path d="M326 132 L346 127 L364 137 L382 118 L400 128 L418 110 L436 130 L454 122 L472 134 L490 114 L508 126 L526 111 L546 121"/>
+  <path d="M624 132 L642 121 L660 135 L678 116 L696 129 L714 107 L732 125 L750 114 L768 136 L786 120 L804 128 L822 108 L840 121 L860 111"/>
+  <path d="M922 132 L940 117 L958 130 L976 109 L994 126 L1012 114 L1030 134 L1048 104 L1066 122 L1084 113 L1102 130 L1120 108 L1138 120 L1166 100"/>
+ </g>
+ <g fill="#8d79d6" font-size="10"><text x="28" y="151">commits</text><text x="326" y="151">public + private</text><text x="624" y="151">across projects</text><text x="922" y="151">and counting</text></g>
+</g>
+</svg>
