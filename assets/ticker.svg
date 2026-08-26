@@ -1,31 +1,7 @@
-<svg width="900" height="46" viewBox="0 0 900 46" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Fira Code',monospace">
-  <rect width="900" height="46" fill="#0b0f17" stroke="#1c2434"/>
-  <clipPath id="tickerClip"><rect width="900" height="46"/></clipPath>
-  <g clip-path="url(#tickerClip)">
-    <g font-size="12.5" fill="#aab4c8">
-      <g>
-        <text y="28">
-          
-          <tspan fill="#5fd88f">●</tspan> AIVOA — duplicate-detection algorithm shipped&#160;&#160;&#160;&#160;
-          <tspan fill="#5fd88f">●</tspan> LPFinder — RBAC + HTTP-only JWT cookies live&#160;&#160;&#160;&#160;
-          <tspan fill="#5fd88f">●</tspan> Kindling — pytest suite green on in-memory SQLite&#160;&#160;&#160;&#160;
-          <tspan fill="#5fd88f">●</tspan> Samaaroh — 30% advance-payment workflow live&#160;&#160;&#160;&#160;
-          <tspan fill="#5fd88f">●</tspan> Wavelength — OTP auto-advance shipped&#160;&#160;&#160;&#160;
-          
-        </text>
-        <animateTransform attributeName="transform" type="translate" from="0,0" to="-1800,0" dur="26s" repeatCount="indefinite"/>
-      </g>
-      <g>
-        <text y="28">
-          <tspan fill="#5fd88f">●</tspan> AIVOA — duplicate-detection algorithm shipped&#160;&#160;&#160;&#160;
-          <tspan fill="#5fd88f">●</tspan> LPFinder — RBAC + HTTP-only JWT cookies live&#160;&#160;&#160;&#160;
-          <tspan fill="#5fd88f">●</tspan> Kindling — pytest suite green on in-memory SQLite&#160;&#160;&#160;&#160;
-          <tspan fill="#5fd88f">●</tspan> Samaaroh — 30% advance-payment workflow live&#160;&#160;&#160;&#160;
-          <tspan fill="#5fd88f">●</tspan> Wavelength — OTP auto-advance shipped&#160;&#160;&#160;&#160;
-          <tspan fill="#ffb454">●</tspan> no drama, just deployments 🍜&#160;&#160;&#160;&#160;
-        </text>
-        <animateTransform attributeName="transform" type="translate" from="1800,0" to="0,0" dur="26s" repeatCount="indefinite"/>
-      </g>
-    </g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="46" viewBox="0 0 1200 46">
+<rect x="1" y="1" width="1198" height="44" rx="5" fill="#080b14" stroke="#5720b7" stroke-width="2"/>
+<text x="24" y="29" font-family="monospace" font-size="15" fill="#b99cff">›_ Building the future, one commit at a time.</text>
+<text x="530" y="29" font-family="monospace" font-size="15" fill="#7d56d8">// Code • Build • Deploy • </text>
+<text x="760" y="29" font-family="monospace" font-size="15" fill="#ff3d91">Repeat</text>
+<text x="1080" y="29" font-family="monospace" font-size="15" fill="#56d364">System Online ●</text>
 </svg>
