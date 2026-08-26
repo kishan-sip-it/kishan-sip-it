@@ -1,14 +1,3 @@
-
-<h1 align="center">Hey there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">, It's me <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&color=7E3ACE&center=true&vCenter=true&lines=Kishan+Marwadi" alt="Typing SVG" />
-</p></h1>
-
-<!-- Add a unique 3D or creative GIF here -->
-<p align="center">
-  <img src="https://cdna.artstation.com/p/assets/images/images/028/102/058/original/pixel-jeff-matrix-s.gif?1593487263" width="100%" height="350" alt="creative coding gif">
-</p>
-
-
 <div align="center">
 
 <img src="./assets/banner.svg" width="100%" alt="Kishan Marwadi — WebSpeedy" />
@@ -23,7 +12,7 @@ I'm the guy behind **[AIVOA](https://github.com/kishan-sip-it/AIVOA)** (AI compl
 things that are, in fact, deployed and not just "in progress" on a Trello board somewhere. Currently an
 **AI Data Annotator @ Handshake AI** — I get paid to break AI models on purpose and document exactly how.
 
-**No excuses, just deployments. 🍜**
+**No drama, just deployments. 🍜**
 
 <br/>
 
