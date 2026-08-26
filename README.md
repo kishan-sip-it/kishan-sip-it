@@ -1,3 +1,14 @@
+
+<h1 align="center">Hey there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">, I'm <p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&color=7E3ACE&center=true&vCenter=true&lines=Aditya+Patel" alt="Typing SVG" />
+</p></h1>
+
+<!-- Add a unique 3D or creative GIF here -->
+<p align="center">
+  <img src="https://cdna.artstation.com/p/assets/images/images/028/102/058/original/pixel-jeff-matrix-s.gif?1593487263" width="100%" height="350" alt="creative coding gif">
+</p>
+
+
 <div align="center">
 
 <img src="./assets/banner.svg" width="100%" alt="Kishan Marwadi — WebSpeedy" />
