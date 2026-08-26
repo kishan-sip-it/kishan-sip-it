@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="Kishan Marwadi — WebSpeedy" />
+<p align="center">
+  <img src="https://cdna.artstation.com/p/assets/images/images/028/102/058/original/pixel-jeff-matrix-s.gif?1593487263" width="100%" height="350" alt="creative coding gif">
+</p>
 <img src="./assets/ticker.svg" width="100%" alt="deploy ticker" />
 
 </div>
