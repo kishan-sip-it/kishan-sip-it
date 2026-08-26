@@ -1,65 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#03040d"/><stop offset=".65" stop-color="#09051a"/><stop offset="1" stop-color="#120526"/>
+    <stop offset="0" stop-color="#02030b"/><stop offset=".62" stop-color="#08051a"/><stop offset="1" stop-color="#12052a"/>
   </linearGradient>
-  <radialGradient id="horizon" cx="50%" cy="92%" r="62%">
-    <stop offset="0" stop-color="#ff159f" stop-opacity=".34"/><stop offset=".35" stop-color="#6511b9" stop-opacity=".16"/><stop offset="1" stop-color="#05050f" stop-opacity="0"/>
+  <radialGradient id="glow" cx="50%" cy="88%" r="58%">
+    <stop offset="0" stop-color="#ff19a8" stop-opacity=".42"/><stop offset=".32" stop-color="#7b16ff" stop-opacity=".18"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
   </radialGradient>
-  <linearGradient id="building" x1="0" y1="0" x2="0" y2="1">
-    <stop stop-color="#17052f"/><stop offset="1" stop-color="#050613"/>
+  <linearGradient id="tower" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#17062f"/><stop offset="1" stop-color="#050611"/>
   </linearGradient>
-  <filter id="glow"><feGaussianBlur stdDeviation="2.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="windows" width="15" height="18" patternUnits="userSpaceOnUse">
+    <rect x="4" y="4" width="3" height="6" fill="#ff28aa" opacity=".7"/>
+    <rect x="10" y="4" width="2" height="6" fill="#6520ff" opacity=".75"/>
+  </pattern>
   <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" opacity=".035"/></pattern>
-  <pattern id="windows" width="18" height="22" patternUnits="userSpaceOnUse"><rect x="5" y="5" width="4" height="7" fill="#ff2ca8" opacity=".65"/><rect x="12" y="5" width="3" height="7" fill="#6418ff" opacity=".7"/></pattern>
+  <filter id="neon"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 </defs>
 
 <rect width="1200" height="260" fill="url(#bg)"/>
-<rect width="1200" height="260" fill="url(#horizon)"/>
+<rect width="1200" height="260" fill="url(#glow)"/>
 
-<!-- pixel stars / clouds -->
-<g fill="#b000ff" opacity=".85">
-  <rect x="82" y="34" width="3" height="3"/><rect x="170" y="63" width="2" height="2"/><rect x="266" y="28" width="3" height="3"/>
-  <rect x="365" y="52" width="2" height="2"/><rect x="474" y="25" width="3" height="3"/><rect x="724" y="36" width="3" height="3"/>
-  <rect x="824" y="22" width="2" height="2"/><rect x="930" y="58" width="3" height="3"/><rect x="1050" y="30" width="2" height="2"/><rect x="1134" y="53" width="3" height="3"/>
+<!-- pixel stars -->
+<g fill="#bd24ff">
+  <rect x="72" y="34" width="3" height="3"/><rect x="151" y="67" width="2" height="2"/><rect x="224" y="28" width="3" height="3"/>
+  <rect x="302" y="53" width="2" height="2"/><rect x="390" y="24" width="3" height="3"/><rect x="810" y="32" width="3" height="3"/>
+  <rect x="900" y="55" width="2" height="2"/><rect x="1000" y="25" width="3" height="3"/><rect x="1090" y="62" width="2" height="2"/><rect x="1150" y="34" width="3" height="3"/>
 </g>
-<g fill="#32104e" opacity=".7">
-  <path d="M18 72h55l10 7H4zM102 55h70l14 8H88zM1028 62h70l15 8h-92zM1120 48h54l12 7h-75z"/>
+<g fill="#32104e" opacity=".8">
+  <path d="M18 67h58l10 6H7zM104 50h66l13 7H90zM1030 52h62l14 7h-83zM1115 65h62l12 7h-82z"/>
 </g>
 
-<!-- LEFT SIDE SKYLINE: deliberately kept away from the title -->
-<g fill="url(#building)" stroke="#42106f" stroke-width="2">
-  <path d="M0 194V128h38v66h13V104h43v90h12V143h35v51h13V84h55v110h12V119h38v75h13V151h42v43h14V105h48v89h16V133h38v61h16V155h44v39H0Z"/>
-  <path d="M0 194V142h28v52h15V116h31v78h13V136h28v58h12V104h34v90h12V148h29v46h14V125h35v69h13V155h28v39h15V135h39v59h16V149h31v45h12V118h40v76H0Z" opacity=".55"/>
+<!-- LEFT CITY: tall, dense and pulled toward the edges -->
+<g fill="url(#tower)" stroke="#461077" stroke-width="2">
+  <path d="M0 202V92h31v110h10V72h45v130h12V118h29v84h12V54h54v148h12V91h39v111h13V126h35v76h13V76h46v126h14V109h37v93h15V136h39v66h15V96h46v106H0Z"/>
 </g>
 <g fill="url(#windows)">
-  <path d="M51 110h41v82H51zM144 90h55v102h-55zM239 125h38v67h-38zM309 112h48v80h-48zM390 140h42v52h-42z"/>
+  <path d="M41 79h45v120H41zM139 61h54v137h-54zM223 98h39v100h-39zM296 83h46v116h-46zM373 103h37v96h-37zM425 75h46v124h-46z"/>
 </g>
 
-<!-- RIGHT SIDE SKYLINE -->
-<g fill="url(#building)" stroke="#42106f" stroke-width="2">
-  <path d="M1200 194V118h-42v76h-14V96h-48v98h-13V137h-35v57h-14V82h-57v112h-13V120h-39v74h-13V150h-45v44h-14V105h-50v89h-15V132h-39v62h-15V154h-43v40h-14V115h-42v79h-16V194Z"/>
-  <path d="M1200 194V140h-29v54h-13v-79h-34v79h-13v-60h-29v60h-12v-91h-35v91h-12v-47h-30v47h-14v-69h-37v69h-13v-39h-29v39h-14v-75h-40v75h-13v-56h-31v56h-14v-76h-38v76h-13v-59h-35v59H1200Z" opacity=".55"/>
+<!-- RIGHT CITY: mirror composition -->
+<g fill="url(#tower)" stroke="#461077" stroke-width="2">
+  <path d="M1200 202V82h-31v120h-11V63h-45v139h-12V109h-30v93h-12V50h-55v152h-12V88h-39v114h-13V121h-35v81h-13V75h-46v127h-14V108h-37v94h-15V135h-39v67h-15V94h-46v108h-19V202Z"/>
 </g>
 <g fill="url(#windows)">
-  <path d="M1158 102h42v90h-42zM1050 92h55v100h-55zM962 126h38v66h-38zM880 112h50v80h-50zM790 138h43v54h-43z"/>
+  <path d="M1159 69h41v130h-41zM1051 57h55v142h-55zM964 92h39v107h-39zM891 78h46v121h-46zM812 101h38v98h-38zM758 73h46v126h-46z"/>
 </g>
 
-<!-- low distant center skyline, leaving a clean title zone -->
-<g fill="#100b24" stroke="#32105c" stroke-width="1.5" opacity=".9">
-  <path d="M330 194v-22h20v22h14v-34h25v34h14v-19h18v19h15v-29h28v29h18v-16h22v16h20v-25h27v25h20v-14h25v14h22v-20h29v20h24v-14h22v14h20v-20h28v20h19v-14h24v14h21v-27h29v27h17v-18h25v18h16v-31h28v31h18v-20h24v20h17v-27h29v27h20v-15h20v15H330Z"/>
+<!-- distant low skyline only at the far edges; center remains clean -->
+<g fill="#100a22" stroke="#32105c" stroke-width="1.5">
+  <path d="M0 202h80v-23h18v23h17v-34h21v34h15v-17h18v17h20v-27h24v27h18v-16h22v16h20v-20h24v20h25v-12h25v12H0Z"/>
+  <path d="M1200 202h-80v-23h-18v23h-17v-34h-21v34h-15v-17h-18v17h-20v-27h-24v27h-18v-16h-22v16h-20v-20h-24v20h-25v-12h-25v12h249Z"/>
 </g>
 
 <!-- neon horizon -->
-<path d="M0 198 Q160 190 320 198 T600 196 T880 198 T1200 195" fill="none" stroke="#ff19a8" stroke-width="3" opacity=".85" filter="url(#glow)"/>
-<path d="M315 201H885" stroke="#7b20ff" stroke-width="2" opacity=".9"/>
-<ellipse cx="600" cy="202" rx="260" ry="12" fill="#d000ff" opacity=".09" filter="url(#glow)"/>
+<path d="M0 205 Q155 197 310 205 T600 203 T890 205 T1200 202" fill="none" stroke="#ff18aa" stroke-width="3" filter="url(#neon)"/>
+<path d="M330 209H870" stroke="#8125ff" stroke-width="2"/>
+<ellipse cx="600" cy="208" rx="270" ry="14" fill="#e000ff" opacity=".1" filter="url(#neon)"/>
 
-<!-- title kept in the clean center -->
-<text x="600" y="104" text-anchor="middle" font-family="monospace" font-size="57" font-weight="900" letter-spacing="1" fill="#f6f4ff" stroke="#ffffff" stroke-width=".6">Kishan Marwadi</text>
-<text x="600" y="142" text-anchor="middle" font-family="monospace" font-size="20" font-weight="700" fill="#18e9ff">Full-Stack Developer | AI Systems Builder</text>
-<rect x="425" y="157" width="350" height="2" fill="#9b36ff" opacity=".9"/>
+<!-- large, unobstructed title area -->
+<text x="600" y="119" text-anchor="middle" font-family="monospace" font-size="58" font-weight="900" letter-spacing="1.2" fill="#f8f7ff" stroke="#ffffff" stroke-width=".7">Kishan Marwadi</text>
+<text x="600" y="153" text-anchor="middle" font-family="monospace" font-size="20" font-weight="700" fill="#18e9ff">Full-Stack Developer | AI Systems Builder</text>
 
-<!-- subtle CRT scanline -->
+<!-- tiny horizon city lights -->
+<g fill="#ff2ba9">
+  <rect x="292" y="198" width="4" height="4"/><rect x="323" y="201" width="3" height="3"/><rect x="876" y="199" width="4" height="4"/><rect x="908" y="201" width="3" height="3"/>
+</g>
+
 <rect width="1200" height="260" fill="url(#scan)"/>
 </svg>
